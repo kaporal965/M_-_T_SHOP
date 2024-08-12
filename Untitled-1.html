@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique en Ligne</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+            
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        #accueil {
+            background: url('https://marketplace.canva.com/EAENJUOHNb4/1/0/1600w/canva-arrière-plan-réunion-art-liquide-tendance-en-bleu-et-rose-pastel-aH2gwCQKIUU.jpg') no-repeat center center/cover;
+            color: rgba(26, 24, 24, 0.801);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+        }
+        #accueil h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+           
+        }
+        #accueil p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+           
+        }
+        #produits {
+            background-color: #fff;
+            padding: 50px 90px;
+        }
+        .produit {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .produit:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .produit h3 {
+            margin-top: 0;
+        }
+        .produit img {
+            max-width: 100%;
+            border-radius: 40px;
+        }
+        #contact {
+            background-color: #a01c6e;
+            color: rgb(12, 12, 12);
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        #achat {
+            background-color: #3498db;
+            color: rgb(0, 0, 0);
+        }
+        .discord-logo {
+            width: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .panier {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .panier h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #222;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
+                <li><a href="#achat">Achats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h1>Bienvenue sur Ma Boutique M & T SHOP</h1>
+        <p>Découvrez nos meilleurs produits de qualité a prix raisonable.</p>
+    </section>
+
+    <section id="produits">
+        <h2>Nos Produits</h2>
+        <div class="produit">
+            <img src="https://marketplace.canva.com/EAENJUOHNb4/1/0/1600w/canva-arrière-plan-réunion-art-liquide-tendance-en-bleu-et-rose-pastel-aH2gwCQKIUU.jpg" alt="Produit 1">
+            <h3>Nom du produit</h3>
+            <p>si on clique il y a le prix et la Description</p>
+    
+        </div>
+        <div class="produit">
+            <img src="https://marketplace.canva.com/EAENJUOHNb4/1/0/1600w/canva-arrière-plan-réunion-art-liquide-tendance-en-bleu-et-rose-pastel-aH2gwCQKIUU.jpg" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>Description du produit.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Raison du message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+        <a href="https://discord.gg/jVEefStb" target="_blank">
+            <img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord" class="discord-logo">
+        </a>
+    </section>
+   
+    <section id="achat">
+        <h2>Achat</h2>
+        <div class="panier">
+            <h3>Produit 1</h3>
+            <p>Quantité: 1</p>
+            <p>Prix: 20€</p>
+        </div>
+        <form action="submit_payment.php" method="post">
+            <label for="card">Numéro de carte:</label>
+            <input type="text" id="card" name="card" required>
+
+            <label for="expiry">Date d'expiration:</label>
+            <input type="text" id="expiry" name="expiry" required>
+
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc" required>
+
+            <input type="submit" value="Payer">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ma Boutique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
